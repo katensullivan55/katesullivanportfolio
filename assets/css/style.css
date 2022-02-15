@@ -18,7 +18,7 @@ body {
 
 header {
     padding: 20px 35px;
-    background-image: url("../images/hero-bg.jpeg");
+    background: var(--tertiary-color);
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
@@ -96,6 +96,13 @@ footer a {
 
 section {
     padding: 60px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .intro p {
