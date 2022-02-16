@@ -1,8 +1,7 @@
 :root {
     --primary-color: #cacaaa;
-    --secondary-color: #5e4352;
-    --tertiary-color: #566246;
-    --quaternary-color: #edafb8;
+    --secondary-color: #cb958e;
+    --tertiary-color: #646f4b;
 }
 
 * {
@@ -19,9 +18,6 @@ body {
 header {
     padding: 20px 35px;
     background: var(--tertiary-color);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 80%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -43,6 +39,8 @@ header a {
     text-decoration: none;
     color: var(--primary-color);
 }
+
+
 
 header nav {
     margin: 7px 0;
@@ -74,14 +72,13 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background: var(--primary-color);
+    background: var(--tertiary-color);
     width: 100%;
     padding: 40px 35px;
 }
 
-footer h2 {
-    color: var(--secondary-color);
-    font-size: 30px;
+footer h4 {
+    color: var(--primary-color);
     margin: 0;
 }
 
@@ -90,28 +87,43 @@ footer div {
     text-align: right;
 }
 
-footer a {
-    color: var(--secondary-color);
-}
-
-section {
-    padding: 60px;
-}
-
-.hero {
+.desk img {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
+    max-width:100%;
+    max-height: 100%;
 }
 
-.intro p {
+section {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flex-fill {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+
+.intro {
     line-height: 1.7;
     color: var(--tertiary-color);
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
-    text-align: center;
+}
+
+.intro ul li {
+    list-style-type: none;
 }
 
 .examples {
@@ -127,10 +139,6 @@ section {
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid var(--tertiary-color);
-}
-
-.example:last-child {
-    border-bottom: none;
 }
 
 .example h3 {
@@ -206,11 +214,11 @@ section {
 }
 
 .resume {
-    background: var(--secondary-color);
+    background: var(--primary-color);
 }
 
 .resume h2 {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 /*
@@ -246,12 +254,7 @@ section {
 .resume-info a {
     color: var(--primary-color);
 }
-
-
-
-.flex-row {
-    display: flex;
-}
+*/
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
