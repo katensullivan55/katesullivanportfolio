@@ -64,7 +64,7 @@ header nav ul li {
 header nav ul li a {
     font-size: 1.8vw;
     border-bottom: 2px solid var(--primary-color);
-    padding: 15px 15px 10px 15px;
+    padding: 10px 10px 5px 10px;
 }
 
 header nav ul li a:hover, header nav ul li a:active {
@@ -139,6 +139,10 @@ section {
 /* ABOUT SECTION */
 .intro {
     margin: 0 auto;
+}
+
+.intro div p {
+    font-size: 22px;
 }
 
 /* WORK SECTION */
@@ -240,14 +244,12 @@ section {
 
 /* CONTACT SECTION */
 .contact {
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .contact-info {
-    margin: 20px;
     color: var(--primary-color);
     flex: 1;
     align-content: flex-end;
@@ -258,7 +260,7 @@ section {
     font-size: 2.05vw;
     text-decoration: none;
     border-bottom: 2px solid var(--tertiary-color);
-    padding: 15px 15px 10px 15px;
+    padding: 15px 10px 10px 10px;
 }
 
 .contact-info a:hover , .contact-info a:active{
@@ -302,7 +304,7 @@ section {
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
     section {
-        padding: 0 15px 30px 15px;
+        padding: 30px 15px 30px 15px;
     }
 
     header h1 {
@@ -312,6 +314,10 @@ section {
 
     header nav ul li a {
         font-size: 20px;
+    }
+
+    .hero-head h2 {
+        font-size: 25px;
     }
 
     .examples h3 {
@@ -338,6 +344,7 @@ section {
         border: 2px solid var(--primary-color);
         padding: 7px;
         margin: 0 5px 5px 5px;
+        border-radius: 15px;
     }
 
     header nav ul li a:hover, header nav ul li a:active {
@@ -452,6 +459,7 @@ section {
         border: 2px solid var(--secondary-color);
         padding: 7px;
         margin: 0 5px 5px 5px;
+        border-radius: 15px;
     }
 
     .contact-info a:active {
