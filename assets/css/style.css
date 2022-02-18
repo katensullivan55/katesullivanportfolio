@@ -272,21 +272,24 @@ section {
         padding-bottom: 0;
         justify-content: center;
         position: relative;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     header h1 {
         width: 100%;
         text-align: center;
+        padding: 5px 0;
     }
 
     header nav ul {
-        margin-top: 20px;
+        margin-top: 10px;
         width: 100%;
         justify-content: center;
     }
 
     header nav ul li a {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .section-title {
@@ -299,7 +302,16 @@ section {
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
     section {
-        padding: 30px 15px;
+        padding: 0 15px 30px 15px;
+    }
+
+    header h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
     }
 
     .examples h3 {
@@ -315,15 +327,34 @@ section {
     .example-text {
         flex: 100%;
     }
+
 }
 
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
+    header nav ul li a {
+        font-size: 18px;
+        border: 2px solid var(--primary-color);
+        padding: 7px;
+        margin: 0 5px 5px 5px;
+    }
+
+    header nav ul li a:hover, header nav ul li a:active {
+        border: 2px solid var(--secondary-color);
+        background: var(--primary-color);
+        color: var(--secondary-color);
+    }
+    
+    .hero-head h2 {
+        font-size: 20px;
+    }
+
     .section-title {
         width: 95%;
-        font-size: 5vw;
+        font-size: 30px;
         text-align: center;
+        padding: 0 0 10px 0;
     }
 
     .intro p {
@@ -371,27 +402,7 @@ section {
         padding: 30px auto 30px auto;
     }
 
-    .work1 {
-        min-width: 75px;
-        min-height: 200px;
-    }
-    
-    .work2 {
-        min-width: 75px;
-        min-height: 200px;
-    }
-    
-    .work3 {
-        min-width: 75px;
-        min-height: 200px;
-    }
-    
-    .work4 {
-        min-width: 75px;
-        min-height: 200px;
-    }
-    
-    .work5 {
+    .work1, .work2, .work3, .work4, .work5 {
         min-width: 75px;
         min-height: 200px;
     }
@@ -425,7 +436,7 @@ section {
         text-align: center;
         padding: 10px;
         margin: 10px;
-        font: 3vw;
+        font-size: 20px;
     }
 
     .contact-info {
@@ -437,14 +448,14 @@ section {
     }
 
     .contact-info a {
-        margin: 0 10px 0 10px;
+        font-size: 20px;
+        border: 2px solid var(--secondary-color);
+        padding: 7px;
+        margin: 0 5px 5px 5px;
     }
 
-    .contact-info a:first-child {
-        margin: 0 10px 0 0;
-    }
-
-    .contact-info a:last-child {
-        margin: 0 0 0 10px;
+    .contact-info a:active {
+        border: 2px solid var(--secondary-color);
+        background: var(--primary-color);
     }
 }
