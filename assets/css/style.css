@@ -353,6 +353,17 @@ section {
         color: var(--secondary-color);
     }
     
+    .hero {
+        background-size: fit;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        max-width: 100%;
+        min-width: 100%;
+        height: auto;
+    }
+
     .hero-head h2 {
         font-size: 20px;
     }
