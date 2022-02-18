@@ -76,9 +76,9 @@ header nav ul li a:hover {
     background-attachment: fixed;
     background-position: 60%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: flex-end;
     max-width: 100%;
     height: auto;
 }
@@ -90,34 +90,15 @@ header nav ul li a:hover {
     color: var(--quarternary-color);
     font-size: 18px;
     line-height: 1.2;
+    padding: 60px 10px 10px 60px;
 }
 
 .hero-head h2 {
     font-style: italic;
     font-size: 55px;
     color: var(--primary-color);
-    text-shadow: 0 0 10px rgba( 0, 0, 0, 0.5);
+    background-color: var(--secondary-color);
 }
-
-.hero-bonus {
-    border: 3px solid var(--secondary-color);
-    border-radius: 15px;
-    padding: 20px;
-    color: var(--secondary-color);
-    width: 40%;
-    margin: 3.5%;
-    box-shadow: 0 0 10px rgba( 0, 0, 0, 0.5);
-}
-
-.hero-bonus h3 {
-    font-size: 24px;
-    margin: 0;
-}
-
-.hero-bonus p {
-    margin: 5px 0 15px 0;
-}
-
 
 .section-title {
     font-size: 3.5vw;
