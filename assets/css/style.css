@@ -121,11 +121,11 @@ section {
 
 .flex-fill {
     display: flex;
-    flex-wrap: column;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    width: 50%;
-    height: 80%;
+    width: 80%;
+    height: 100%;
     padding: 0 30px;
 }
 
@@ -133,37 +133,39 @@ section {
 /* ABOUT SECTION */
 .intro {
     margin: 0 auto;
+    alignment:left;
 }
 
 .intro ul li {
     list-style-type: none;
 }
 
-
 /* WORK SECTION */
 .example a {
     color: var(--secondary-color);
     text-decoration: none;
+    font-weight: 100;
 }
 
 .example-link {
-    padding: 0 0 30px 0;
+    padding: 30px;
+    width: 50%;
 }
 
 .img-title {
-    width: 100%;
+    max-width: 100%;
     opacity: 0.5;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.img-title:hover {
+.img-title:hover, .image-title:active {
     opacity: 1;
 }
 
 .img-title img {
     max-width: 100%;
-    max-height: auto;
+    max-height: width;
 }
 
 .img-title h3 {
