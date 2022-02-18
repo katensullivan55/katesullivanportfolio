@@ -19,7 +19,7 @@ body {
 
 /* HEADER */
 header {
-    padding: 20px 0;
+    padding: 10px 0;
     background: var(--tertiary-color);
     display: flex;
     justify-content: space-between;
@@ -32,7 +32,7 @@ header {
 
 header h1 {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 3.5vw;
     color: var(--primary-color);
     margin: 0;
     background-color: #97a97c;
@@ -63,10 +63,13 @@ header nav ul li {
 
 header nav ul li a {
     font-size: 2.05vw;
+    border-bottom: 2px solid var(--primary-color);
+    padding: 15px 15px 10px 15px;
 }
 
 header nav ul li a:hover {
     color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
 }   
 
 /* TOP IMAGE */
@@ -74,10 +77,8 @@ header nav ul li a:hover {
     background-image: url("../images/plants.jpg");
     background-size: cover;
     background-attachment: fixed;
-    background-position: 60%;
     display: flex;
     justify-content: flex-end;
-    flex-wrap: wrap;
     align-items: flex-end;
     max-width: 100%;
     height: auto;
@@ -85,19 +86,17 @@ header nav ul li a:hover {
 
 .hero-head {
     width: 35%;
-    text-align: right;
-    margin: 3.5%;
+    text-align: left;
+    margin: 3.5% 0 3.5% 0;
     color: var(--quarternary-color);
-    font-size: 18px;
-    line-height: 1.2;
-    padding: 60px 10px 10px 60px;
 }
 
 .hero-head h2 {
     font-style: italic;
-    font-size: 55px;
+    font-size: 3vw;
     color: var(--primary-color);
     background-color: var(--secondary-color);
+    padding: 10px 60px 10px 10px;
 }
 
 .section-title {
@@ -148,7 +147,7 @@ section {
 
 /* WORK SECTION */
 .example a {
-    color: var(--quarternary-color);
+    color: var(--primary-color);
     text-decoration: none;
     font-weight: 100;
 }
@@ -159,29 +158,63 @@ section {
 }
 
 .img-title {
-    width: 28.65vw;
-    opacity: 0.5;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color: black;
-    align-content: center;
+    width: 100%;
+    align-content: flex-end;
+    justify-content: flex-end;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    border: 6px solid var(--secondary-color);
+}
+
+.work1 {
+    background-image: url("../images/run-buddy.jpg");
+    background-size: cover;
+    background-attachment: relative;
+    min-width: 150px;
+    min-height: 400px;
+    opacity: 0.7;
+}
+
+.work2 {
+    background-image: url("../images/horiseon.jpg");
+    background-size: cover;
+    background-attachment: relative;
+    min-width: 150px;
+    min-height: 400px;
+    opacity: 0.7;
+}
+
+
+.work3 {
+    background-image: url("../images/sheep.GIF");
+    background-size: cover;
+    background-attachment: relative;
+    min-width: 150px;
+    min-height: 400px;
+    opacity: 0.7;
+}
+
+.work4 {
+    background-image: url("../images/okie.gif");
+    background-size: cover;
+    background-attachment: relative;
+    min-width: 150px;
+    min-height: 400px;
+    opacity: 0.7;
 }
 
 .img-title:hover, .image-title:active {
     opacity: 1;
-    color: var(--tertiary-color);
+    color: var(--primary-color);
 }
 
-.img-title img {
-    width: 28.65vw;
-    height: 28.65vw;
-}
-
-.img-title h3 {
-    text-align: center; 
-    padding: 10px 20px;
+.text {
+    padding: 8px 10px 10px 10px;
+    margin: 10px 50px 10px 0px;
+    background-color: var(--secondary-color);
     opacity: 1;
-  }
+}
 
 /* CONTACT SECTION */
 .contact {
@@ -195,13 +228,21 @@ section {
     margin: 20px;
     color: var(--primary-color);
     flex: 1;
-    align-content: center;
+    align-content: flex-end;
 }
 
 .contact-info a {
     color: var(--tertiary-color);
-
+    font-size: 2.05vw;
+    text-decoration: none;
+    border-bottom: 2px solid var(--tertiary-color);
+    padding: 15px 15px 10px 15px;
 }
+
+.contact-info a:hover {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+}   
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
@@ -226,18 +267,10 @@ section {
         font-size: 20px;
     }
 
-    footer h2, footer div {
-        text-align: center;
+    .section-title {
         width: 100%;
     }
 
-    .section-title {
-        width: 80%;
-    }
-
-    .contact {
-        flex: 0 70%;
-    }
 }
 
 
