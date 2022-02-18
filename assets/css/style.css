@@ -142,7 +142,7 @@ section {
 
 /* WORK SECTION */
 .example a {
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
     text-decoration: none;
     font-weight: 100;
 }
@@ -154,7 +154,7 @@ section {
 
 .img-title {
     max-width: 100%;
-    opacity: 0.5;
+    opacity: 0.75;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -276,5 +276,41 @@ section {
 
     .example {
         flex: 0 100%;
+    }
+
+    section {
+        padding: 60px;
+        display: flex;
+        justify-content: space-between;
+        color: var(--tertiary-color);
+        padding-bottom: 20px;
+        margin: 0 auto 35px auto;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .flex-row {
+        display: flex;
+        justify-content: center;
+        border-bottom: 2.5px solid var(--secondary-color);
+        border-right: none;
+        width: 100%;
+        flex-wrap: wrap;
+        align-content: center;
+        padding: 0 20px 0 0;
+    }
+    
+    .flex-fill {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+        padding: 30px;
+    }
+
+    .section-title {
+        font-size: 5vw;
     }
 }
