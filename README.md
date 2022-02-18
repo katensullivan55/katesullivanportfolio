@@ -1,6 +1,6 @@
 # Kate Sullivan Web Portfolio
 
-
+![Screen Shot 2022-02-18 at 5 43 20 PM](https://user-images.githubusercontent.com/93236563/154771211-ced41982-4df2-439f-8ce0-61bb606d9d42.png)
 
 ## Description
 
